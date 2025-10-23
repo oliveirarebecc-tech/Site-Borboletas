@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O Mundo das Borboletas</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta for smooth scrolling behavior on supported browsers -->
+  <meta name="theme-color" content="#ffd9ec">
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Menu principal">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-emoji">🦋</span>
+        <span class="logo-text">Mundo das Borboletas</span>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#species">Espécies</a></li>
+        <li><a href="#curiosities">Curiosidades</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero" role="banner">
+    <div class="hero-inner">
+      <h1>O Encanto das Borboletas</h1>
+      <p class="lead">Beleza, metamorfose e papel ecológico — descubra as espécies, curiosidades e imagens incríveis.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#species">Conhecer espécies</a>
+        <a class="btn ghost" href="#gallery">Ver galeria</a>
+      </div>
+    </div>
+    <figure class="hero-figure" aria-hidden="true">
+      <img src="https://i.pinimg.com/1200x/63/78/1b/63781b38f4eb9037d8fdf7b77e721ce1.jpg" alt="Borboleta sobre flor" />
+    </figure>
+  </header>
+
+  <main id="main">
+    <!-- ESPECIES -->
+    <section id="species" class="section">
+      <div class="container">
+        <h2>Espécies Populares</h2>
+        <p class="section-intro">Conheça algumas espécies famosas e suas características principais.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="https://i.pinimg.com/736x/54/b0/95/54b0953c9e0b2421a880983850111287.jpg" alt="Borboleta Monarca">
+            <div class="card-body">
+              <h3>Monarca (<em>Danaus plexippus</em>)</h3>
+              <p class="muted">Famosa por migrações de longa distância.</p>
+              <ul>
+                <li><strong>Habitat:</strong> campos e jardins</li>
+                <li><strong>Alimentação:</strong> néctar de flores</li>
+                <li><strong>Curiosidade:</strong> pode voar milhares de km.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://i.pinimg.com/736x/34/17/f8/3417f826a6201116db9c1f48d5bbffb1.jpg" alt="Borboleta azul">
+            <div class="card-body">
+              <h3>Borboleta-azul (<em>Polyommatus</em>)</h3>
+              <p class="muted">Pequena, asas brilhantes azuladas.</p>
+              <ul>
+                <li><strong>Habitat:</strong> pradarias</li>
+                <li><strong>Tamanho:</strong> pequeno</li>
+                <li><strong>Curiosidade:</strong> cores causadas por estruturas das asas.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://genent.cals.ncsu.edu/wp-content/uploads/2015/04/heliconid0963.jpg" alt="Borboleta tropical">
+            <div class="card-body">
+              <h3>Tigre-de-flor (<em>Heliconiinae</em>)</h3>
+              <p class="muted">Padrões vibrantes que afastam predadores.</p>
+              <ul>
+                <li><strong>Habitat:</strong> regiões tropicais</li>
+                <li><strong>Defesa:</strong> padrões de aviso</li>
+                <li><strong>Curiosidade:</strong> algumas armazenam toxinas das plantas.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURIOSIDADES (accordion estilo) -->
+    <section id="curiosities" class="section alt">
+      <div class="container">
+        <h2>Curiosidades e fatos</h2>
+        <p class="section-intro">Fatos interessantes que encantam e ajudam a entender melhor esses insetos.</p>
+
+        <div class="faq-grid">
+          <div class="faq">
+            <button class="faq-q">Como elas "provam" as flores?</button>
+            <div class="faq-a">
+              <p>As borboletas possuem quimiorreceptores nas patas que detectam o néctar ao pousarem na flor — por isso dizem que 'provam com os pés'.</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="faq-q">O que é metamorfose?</button>
+            <div class="faq-a">
+              <p>É o processo em quatro estágios: ovo → lagarta (ciclo de alimentação) → pupa (crisálida) → adulto (borboleta).</p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="faq-q">Por que tantas cores?</button>
+            <div class="faq-a">
+              <p>Cores servem para camuflagem, aviso a predadores, atração de parceiros e regulação térmica; às vezes vêm de pigmentos, outras vezes de estruturas microscópicas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA com CAROUSEL -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Galeria Interativa</h2>
+        <p class="section-intro">Passe o mouse nas imagens ou abra em tela maior.</p>
+
+        <div class="carousel" aria-roledescription="carousel" data-carousel>
+          <button class="carousel-btn prev" data-carousel-button="prev" aria-label="Imagem anterior">‹</button>
+          <div class="carousel-track">
+            <figure class="carousel-item" data-active>
+              <img src="https://i.pinimg.com/1200x/15/ba/f6/15baf634dbdc91def4672ec6b5882395.jpg" alt="Borboleta 1">
+              <figcaption>Borboleta sobre flor</figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+              <img src="https://i.pinimg.com/736x/1f/c9/d2/1fc9d2ad27972bd1e80ddde5c4ebed4f.jpg" alt="Borboleta 2">
+              <figcaption>Borboleta azul</figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+              <img src="https://i.pinimg.com/736x/54/b0/95/54b0953c9e0b2421a880983850111287.jpg" alt="Borboleta 3">
+              <figcaption>Borboleta amarela</figcaption>
+            </figure>
+
+            <figure class="carousel-item">
+              <img src="https://img.pikbest.com/ai/illus_our/20230424/84f134d9450b557a35499de095ca3868.jpg!w700wp" alt="Borboleta 4">
+              <figcaption>Borboleta tropical</figcaption>
+            </figure>
+          </div>
+
+          <button class="carousel-btn next" data-carousel-button="next" aria-label="Próxima imagem">›</button>
+        </div>
+
+        <!-- thumbs -->
+        <div class="thumbs">
+          <button class="thumb" data-index="0" aria-label="Ver imagem 1"><img src="https://i.pinimg.com/1200x/15/ba/f6/15baf634dbdc91def4672ec6b5882395.jpg" alt=""></button>
+          <button class="thumb" data-index="1" aria-label="Ver imagem 2"><img src="https://i.pinimg.com/736x/1f/c9/d2/1fc9d2ad27972bd1e80ddde5c4ebed4f.jpg" alt=""></button>
+          <button class="thumb" data-index="2" aria-label="Ver imagem 3"><img src="https://i.pinimg.com/736x/54/b0/95/54b0953c9e0b2421a880983850111287.jpg" alt=""></button>
+          <button class="thumb" data-index="3" aria-label="Ver imagem 4"><img src="https://img.pikbest.com/ai/illus_our/20230424/84f134d9450b557a35499de095ca3868.jpg!w700wp" alt=""></button>
+        </div>
+
+      </div>
+    </section>
+    
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Contato</h2>
+        <p class="section-intro">Tem perguntas ou quer colaborar com fotos e informações? Escreva para nós.</p>
+
+        <form id="contact-form" class="contact-form" aria-label="Formulário de contato">
+          <label>
+            <span>Nome</span>
+            <input type="text" name="name" placeholder="Seu nome" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </label>
+          <label>
+            <span>Mensagem</span>
+            <textarea name="message" rows="4" placeholder="Escreva aqui..." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar</button>
+            <button type="reset" class="btn ghost">Limpar</button>
+          </div>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Feito com carinho por Rebecca 💖 | © 2025 Mundo das Borboletas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
