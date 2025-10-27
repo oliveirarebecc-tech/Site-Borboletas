@@ -112,7 +112,3 @@ footer{background:var(--accent-2);color:#fff;padding:18px 20px;margin-top:30px;t
   .carousel-item img{height:260px}
   .hero-inner h1{font-size:1.8rem}
 }
-@media (max-width:400px){
-  .carousel-btn{padding:8px}
-  .thumb img{width:56px;height:40px}
-}
